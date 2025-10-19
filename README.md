@@ -1,1 +1,1 @@
-ПРоектная работа "Оно тебе надо"
+https://github.com/Eduard1338/first-project/tree/main#
