@@ -5,8 +5,6 @@
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 50px;
 }
@@ -33,11 +31,37 @@ h3{
   height: 49;
   margin: 1px;
 }
+.nav-link {
+    padding: 20px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+   text-decoration: underline;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    text-decoration: underline;
+}
 .header__links-list{
   display: flex;
   list-style: circle;
   gap: 20px;
 }
+
 .a-contact{
   color:black;
   font-family: 'Raleway', sans-serif;
@@ -55,6 +79,9 @@ h3{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .title{
   font-family: 'Raleway', sans-serif;
@@ -79,7 +106,9 @@ h3{
 .description{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 .p-description{
   font-family: 'Raleway', sans-serif;
@@ -89,6 +118,7 @@ h3{
   text-transform: uppercase;
   color:rgba(255, 255, 255, 1);
   padding-left: 50px;
+  word-spacing: 15px;
 }
 .button-description{
   width: 256px;
@@ -99,11 +129,9 @@ h3{
   font-weight: 500;
   font-style: Medium;
   font-size: 22px;
-  letter-spacing: 0%;
-  text-align: center;
   text-transform: uppercase;
   color: white;
-  text-align: justify;
+
 }
 .lots{
   margin: 180px 24px 0px 24px;
@@ -121,28 +149,34 @@ h3{
 }
 .lots__card-list{
   display: flex;
+  align-self: center;
   justify-content: space-between;
 }
 .lots__card-list-item{
   min-height: 596px;
   min-width: 334px;
+
+
 }
 .card-link{
   height: 100%;
 }
 .card{
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+  max-width: 334px;
+
 }
 .card-films{
   background-image: url(../sourse/images/b6c1b9c4f9bad749215d12244cdd86581803c147.jpg);
+  background-size: cover;
 }
 .card-books{
   background-image: url(../sourse/images/5643432f06853e92f2a26a4fdddcd6a380a702f7.png);
+  background-size: cover;
 }
 .card-images{
  background-image: url(../sourse/images/3543ee6f0852101f5ab31479457065d43c824f26.jpg);
+ background-size: cover;
 }
 .card-title{
 font-family: 'Raleway', sans-serif;
@@ -176,7 +210,21 @@ font-size: 20px;
   height: 100%;
   margin: 120px 24px 180px 24px;
 }
+.about-title{
+  padding-top: 133px;
+  padding-bottom: 100px;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+text-transform: uppercase;
+
+
+}
 .about-logo{
+  padding-top: 35px;
+  padding-left: 47px;
+  padding-bottom: 12px;
   height: 240px;
   width: 240px;
   background-image: url(../sourse/images/logo-column.svg);
@@ -184,21 +232,58 @@ font-size: 20px;
   margin-right: 72px;
 }
 .about-text{
-  font-family: Raleway;
-font-weight: 400;
-font-style: Regular;
-font-size: 20px;
+font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  padding-bottom: 20px ;
 }
 .footer{
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 .footer-menu{
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+text-align: center;
+}
+.footer__links-list{
+  display: flex;
+  flex-direction: column;
+align-content: center;
+}
+.footer-address{
+   max-width: 240px;
+  max-height: 98px;
+  margin-left: 50px;
+  justify-self: start;
 }
 .social-network-logo{
   width: 240px;
   height: 48px;
-  background-image: url(../sourse/images/socials.svg);
-   background-size: cover;
+  background-size: cover;
 }
+.footer-list-social{
+  display: flex;
+  width: 240px ;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer-social-icon-youtube{
+  width: 48px;
+  height: 48px;
+  background-image: url(../sourse/images/YouTube.svg);
+}
+.footer-social-icon-vk{
+  width: 48px;
+  height: 48px;
+  background-image: url(../sourse/images/VK.svg);
+} 
 
+.footer-social-icon-pintres{
+  width: 48px;
+  height: 48px;
+  background-image: url(../sourse/images/Pinterest.svg);
+}

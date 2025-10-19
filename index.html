@@ -13,13 +13,13 @@
     <nav class="header_menu">
       <ul class="header__links-list">
         <li>
-          <h3>главная</h3>
+          <a href="#main" class="nav-link">главная</a>
         </li>
         <li>
-          <h3>посмотреть лоты</h3>
+          <a href="#lots" class="nav-link">посмотреть лоты</a>
         </li>
         <li>
-          <h3>об аукционе</h3>
+          <a href="#about" class="nav-link">об аукционе</a>
         </li>
       </ul>
     </nav>
@@ -32,7 +32,7 @@
       <h3 class="nav-address">наб. Принсенграхт 263 <br>- 265, Амстердам</h3>
     </address>
   </header>
-  <main class="main">
+  <main id="main" class="main">
 <section class="cover">
   <div class="overlay">
     <h1 class="title">
@@ -41,36 +41,44 @@
       <span class="span-right">НАДО</span>
     </h1>
     <div class="description">
-      <p class="p-description">Аукцион вещей, вкоторые никто не верил</p>
+      <p class="p-description">Аукцион вещей, в которые никто не верил</p>
       <button class="button-description">Сделать ставку</button>
     </div>
-    </div>
+  </div>
 </section>
-<section class="lots">
+<section id="lots" class="lots">
+
   <h1 class="title-lots"> лоты</h1>
   <ul class="lots__card-list">
+
     <li class="lots__card-list-item">
       <a class="card-link">
         <article class="card card-films">
+          <div class="overlay">
           <h2 class="card-title">Фильм режиссёра, который бросил киношколу</h2>
           <p class="card-text"> Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+         </div>
         </article>
       </a>
     </li>
-
     <li class="lots__card-list-item"> 
       <a class="card-link">
         <article class="card card-books">
+          <div class="overlay">
           <h2 class="card-title">Книга, где описан один скучный день из жизни рекламного агента</h2>
           <p class="card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+        </div>
         </article>
+        
       </a>
     </li>
     <li class="lots__card-list-item">
       <a class="card-link">
         <article class="card card-images">
+           <div class="overlay">
           <h2 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
           <p class="card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+        </div>
         </article>
       </a>
     </li>
@@ -80,7 +88,7 @@
     <h3 class="h3-more">посмотреть больше</h3>
   </a>
 </section>
-<section class="about">
+<section id="about" class="about">
   <div class="about-logo"></div>
   <div class="about-text-title">
     <h1 class="about-title"> Об аукционе</h1>
@@ -91,25 +99,43 @@
 </section>
  </main>
   <footer class="footer">
-    <address class="address">
+    <address class="footer-address">
       <a class="a-contact" href="tel:+70000000">+9 999 555 5555</a>
       <a class="a-contact"href="mailto:mail@example.com"><br>info@sobaka.ge </br> </a>
       <h3 class="nav-address">наб. Принсенграхт 263 <br>- 265, Амстердам</h3>
     </address>
     <nav class="footer-menu">
       <ul class="footer__links-list">
-        <li>
-          <h3>главная</h3>
+      <li>
+          <a href="#main" class="nav-link">главная</a>
         </li>
         <li>
-          <h3>посмотреть лоты</h3>
+          <a href="#lots" class="nav-link">посмотреть лоты</a>
         </li>
         <li>
-          <h3>об аукционе</h3>
+          <a href="#about" class="nav-link">об аукционе</a>
         </li>
       </ul>
     </nav>
     <nav class="footer-social-network">
+      <ul class="footer-list-social">
+        <li class="footer-social-list-item">
+          <a class="footer-social-link-youtube" target="_blank" href="https://www.youtube.com/">
+            <div class="footer-social-icon-youtube"></div>
+          </a>
+          
+        </li>
+        <li class="footer-social-list-item">
+          <a class="footer-social-link-vk" target="_blank" href="https://vk.com/feed">
+            <div class="footer-social-icon-vk"></div>
+          </a>          
+        </li>
+        <li class="footer-social-list-item">
+          <a class="footer-social-link-pintres" target="_blank" href="https://ru.pinterest.com/">
+          <div class="footer-social-icon-pintres"></div>
+          </a>
+        </li>
+      </ul>
       <div class="social-network-logo"></div>
     </nav>
     
